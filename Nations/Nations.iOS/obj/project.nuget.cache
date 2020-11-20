@@ -1,0 +1,30 @@
+{
+  "version": 2,
+  "dgSpecHash": "AaghIQhp8ecd8A44XOkKfW7t9pUI295/pxeyStEkKtxww+aewwKbsxcutQ+inhnCpKBldrNCYCfTlRSwBOX0wA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\LENOVO\\Documents\\Programming\\Mobile\\CountriesMobileApp\\Nations\\Nations.iOS\\Nations.iOS.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\LENOVO\\.nuget\\packages\\dryioc.dll\\4.0.7\\dryioc.dll.4.0.7.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\newtonsoft.json\\12.0.3\\newtonsoft.json.12.0.3.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\prism.core\\7.2.0.1422\\prism.core.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\prism.dryioc.forms\\7.2.0.1422\\prism.dryioc.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\prism.forms\\7.2.0.1422\\prism.forms.7.2.0.1422.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\skiasharp\\1.68.0\\skiasharp.1.68.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.licensing\\18.3.0.47\\syncfusion.licensing.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.xamarin.core\\18.3.0.47\\syncfusion.xamarin.core.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.xamarin.datasource\\18.3.0.47\\syncfusion.xamarin.datasource.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.xamarin.gridcommon\\18.3.0.47\\syncfusion.xamarin.gridcommon.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.xamarin.sfbusyindicator\\18.3.0.47\\syncfusion.xamarin.sfbusyindicator.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\syncfusion.xamarin.sfrotator\\18.3.0.47\\syncfusion.xamarin.sfrotator.18.3.0.47.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.reflection.emit.lightweight\\4.3.0\\system.reflection.emit.lightweight.4.3.0.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\webp.touch\\1.0.8\\webp.touch.1.0.8.nupkg.sha512",
+    "C:\\Microsoft\\Xamarin\\NuGet\\xamarin.essentials\\1.5.3.2\\xamarin.essentials.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.essentials.interfaces\\1.5.3.2\\xamarin.essentials.interfaces.1.5.3.2.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.ffimageloading\\2.4.11.982\\xamarin.ffimageloading.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.ffimageloading.forms\\2.4.11.982\\xamarin.ffimageloading.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.ffimageloading.svg\\2.4.11.982\\xamarin.ffimageloading.svg.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.ffimageloading.svg.forms\\2.4.11.982\\xamarin.ffimageloading.svg.forms.2.4.11.982.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\xamarin.forms\\4.7.0.1239\\xamarin.forms.4.7.0.1239.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,15 @@
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\bin\Debug\netstandard2.0\CountriesApp.deps.json
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\bin\Debug\netstandard2.0\CountriesApp.dll
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\bin\Debug\netstandard2.0\CountriesApp.pdb
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.csprojAssemblyReference.cache
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\Views\CountriesPage.xaml.g.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\Views\CountryDetailPage.xaml.g.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\Views\LoginPage.xaml.g.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\Views\MainPage.xaml.g.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.dll
+C:\Users\LENOVO\Documents\Programming\Andreia\Nations\Nations\Nations\obj\Debug\netstandard2.0\CountriesApp.pdb
