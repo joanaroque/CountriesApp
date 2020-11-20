@@ -23,6 +23,14 @@
         },
         "runtime": {
           "Nations.dll": {}
+        },
+        "resources": {
+          "es/Nations.resources.dll": {
+            "locale": "es"
+          },
+          "fr/Nations.resources.dll": {
+            "locale": "fr"
+          }
         }
       },
       "DryIoc.dll/4.0.7": {

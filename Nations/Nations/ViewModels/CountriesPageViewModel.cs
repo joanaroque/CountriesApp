@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Globalization;
 using System.Linq;
@@ -22,9 +23,13 @@ namespace Nations.ViewModels
 
         string _search;
         List<Country> _myCountries;
+        List<Covid19Data> _covid;
         DelegateCommand _searchCommand;
 
+
         ObservableCollection<CountryViewModel> _countries;
+
+        ObservableCollection<CovidViewModel> _corona;
 
         public CountriesPageViewModel(
             INavigationService navigationService,
@@ -35,10 +40,83 @@ namespace Nations.ViewModels
             _apiService = apiService;
 
             LoadCountriesAsync();
+
+            LoadCovidDataAsync();
         }
+
+        private async void LoadCovidDataAsync()
+        {
+            if (Connectivity.NetworkAccess != NetworkAccess.Internet)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", "No internet connection", "OK");
+                return;
+            }
+
+            IsRunning = true;
+
+            string url = App.Current.Resources["UrlAPICovid"].ToString();
+
+            Response response = await _apiService.GetCovidAsync<Covid19Data>(
+                url, ".herokuapp.com/");
+
+            IsRunning = false;
+
+            if (!response.IsSuccess)
+            {
+                await App.Current.MainPage.DisplayAlert("Error", response.Message, "OK");
+                return;
+            }
+
+            _covid = (List<Covid19Data>)response.Result;
+
+            ShowCovid();
+        }
+
+        private void ShowCovid()
+        {
+            if (string.IsNullOrEmpty(Search))
+            {
+                Corona = new ObservableCollection<CovidViewModel>(
+                    _covid.Select(c =>
+                    new CovidViewModel(_navigationService)
+                    {
+                        Country = _apiService.CheckStringCovid(c.Country),
+                        Cases = c.Cases,
+                        TodayCases = c.TodayCases,
+                        Deaths = c.Deaths,
+                        TodayDeaths = c.TodayDeaths,
+                        Recovered = c.Recovered,
+                        Active = c.Active,
+                        Critical = c.Critical,
+                        CasesPerOneMillion = c.CasesPerOneMillion
+                    })
+                    .ToList());
+            }
+            else
+            {
+                Corona = new ObservableCollection<CovidViewModel>(
+                    _covid.Select(c =>
+                    new CovidViewModel(_navigationService)
+                    {
+                        Country = _apiService.CheckStringCovid(c.Country),
+                        Cases = c.Cases,
+                        TodayCases = c.TodayCases,
+                        Deaths = c.Deaths,
+                        TodayDeaths = c.TodayDeaths,
+                        Recovered = c.Recovered,
+                        Active = c.Active,
+                        Critical = c.Critical,
+                        CasesPerOneMillion = c.CasesPerOneMillion
+                    })
+                    .Where(c => c.Country.ToLower().Contains(Search.ToLower()))
+                    .ToList());
+            }
+        }
+
 
         public DelegateCommand SearchCommand => _searchCommand ?? (_searchCommand =
             new DelegateCommand(ShowCountries));
+
 
         public string Search
         {
@@ -47,6 +125,7 @@ namespace Nations.ViewModels
             {
                 SetProperty(ref _search, value);
                 ShowCountries();
+                ShowCovid();
             }
         }
 
@@ -60,6 +139,12 @@ namespace Nations.ViewModels
         {
             get => _countries;
             set => SetProperty(ref _countries, value);
+        }
+
+        public ObservableCollection<CovidViewModel> Corona
+        {
+            get => _corona;
+            set => SetProperty(ref _corona, value);
         }
 
         async void LoadCountriesAsync()
@@ -98,32 +183,32 @@ namespace Nations.ViewModels
                     _myCountries.Select(c =>
                     new CountryViewModel(_navigationService)
                     {
-                        Alpha2Code = _apiService.CheckString(c.Alpha2Code),
-                        Alpha3Code = _apiService.CheckString(c.Alpha3Code),
-                        AltSpellings = _apiService.CheckStringList(c.AltSpellings),
+                        Alpha2Code = _apiService.CheckStringCountries(c.Alpha2Code),
+                        Alpha3Code = _apiService.CheckStringCountries(c.Alpha3Code),
+                        AltSpellings = _apiService.CheckStringCountriesList(c.AltSpellings),
                         Area = c.Area,
-                        Borders = _apiService.CheckStringList(c.Borders),
-                        CallingCodes = _apiService.CheckStringList(c.CallingCodes),
-                        Capital = _apiService.CheckString(c.Capital),
-                        Cioc = _apiService.CheckString(c.Cioc),
+                        Borders = _apiService.CheckStringCountriesList(c.Borders),
+                        CallingCodes = _apiService.CheckStringCountriesList(c.CallingCodes),
+                        Capital = _apiService.CheckStringCountries(c.Capital),
+                        Cioc = _apiService.CheckStringCountries(c.Cioc),
                         Currencies = c.Currencies,
-                        Demonym = _apiService.CheckString(c.Demonym),
+                        Demonym = _apiService.CheckStringCountries(c.Demonym),
                         Flag = c.Flag,
                         Gini = c.Gini,
                         Languages = c.Languages,
                         Latlng = c.Latlng,
                         Name = c.Alpha2Code == RegionInfo.CurrentRegion.Name ?
-                        _apiService.CheckString(c.Name) + " (Current country)" :
-                        _apiService.CheckString(c.Name),
-                        NativeName = _apiService.CheckString(c.NativeName),
-                        NumericCode = _apiService.CheckString(c.NumericCode),
+                        _apiService.CheckStringCountries(c.Name) + " (Current country)" :
+                        _apiService.CheckStringCountries(c.Name),
+                        NativeName = _apiService.CheckStringCountries(c.NativeName),
+                        NumericCode = _apiService.CheckStringCountries(c.NumericCode),
                         Population = c.Population,
-                        Region = _apiService.CheckString(c.Region),
+                        Region = _apiService.CheckStringCountries(c.Region),
                         RegionalBlocs = _apiService.CheckRegionalBlocsList(c.RegionalBlocs),
-                        Subregion = _apiService.CheckString(c.Subregion),
-                        Timezones = _apiService.CheckStringList(c.Timezones),
-                        TopLevelDomain = _apiService.CheckStringList(c.TopLevelDomain),
-                        Translations = c.Translations
+                        Subregion = _apiService.CheckStringCountries(c.Subregion),
+                        Timezones = _apiService.CheckStringCountriesList(c.Timezones),
+                        TopLevelDomain = _apiService.CheckStringCountriesList(c.TopLevelDomain),
+                        Translations = c.Translations,
                     })
                     .ToList());
             }
@@ -133,31 +218,31 @@ namespace Nations.ViewModels
                     _myCountries.Select(c =>
                     new CountryViewModel(_navigationService)
                     {
-                        Alpha2Code = _apiService.CheckString(c.Alpha2Code),
-                        Alpha3Code = _apiService.CheckString(c.Alpha3Code),
-                        AltSpellings = _apiService.CheckStringList(c.AltSpellings),
+                        Alpha2Code = _apiService.CheckStringCountries(c.Alpha2Code),
+                        Alpha3Code = _apiService.CheckStringCountries(c.Alpha3Code),
+                        AltSpellings = _apiService.CheckStringCountriesList(c.AltSpellings),
                         Area = c.Area,
-                        Borders = _apiService.CheckStringList(c.Borders),
-                        CallingCodes = _apiService.CheckStringList(c.CallingCodes),
-                        Capital = _apiService.CheckString(c.Capital),
-                        Cioc = _apiService.CheckString(c.Cioc),
+                        Borders = _apiService.CheckStringCountriesList(c.Borders),
+                        CallingCodes = _apiService.CheckStringCountriesList(c.CallingCodes),
+                        Capital = _apiService.CheckStringCountries(c.Capital),
+                        Cioc = _apiService.CheckStringCountries(c.Cioc),
                         Currencies = c.Currencies,
-                        Demonym = _apiService.CheckString(c.Demonym),
+                        Demonym = _apiService.CheckStringCountries(c.Demonym),
                         Flag = c.Flag,
                         Gini = c.Gini,
                         Languages = c.Languages,
                         Latlng = c.Latlng,
                         Name = c.Alpha2Code == RegionInfo.CurrentRegion.Name ?
-                        _apiService.CheckString(c.Name) + " (Current country)" :
-                        _apiService.CheckString(c.Name),
-                        NativeName = _apiService.CheckString(c.NativeName),
-                        NumericCode = _apiService.CheckString(c.NumericCode),
+                        _apiService.CheckStringCountries(c.Name) + " (Current country)" :
+                        _apiService.CheckStringCountries(c.Name),
+                        NativeName = _apiService.CheckStringCountries(c.NativeName),
+                        NumericCode = _apiService.CheckStringCountries(c.NumericCode),
                         Population = c.Population,
-                        Region = _apiService.CheckString(c.Region),
+                        Region = _apiService.CheckStringCountries(c.Region),
                         RegionalBlocs = _apiService.CheckRegionalBlocsList(c.RegionalBlocs),
-                        Subregion = _apiService.CheckString(c.Subregion),
-                        Timezones = _apiService.CheckStringList(c.Timezones),
-                        TopLevelDomain = _apiService.CheckStringList(c.TopLevelDomain),
+                        Subregion = _apiService.CheckStringCountries(c.Subregion),
+                        Timezones = _apiService.CheckStringCountriesList(c.Timezones),
+                        TopLevelDomain = _apiService.CheckStringCountriesList(c.TopLevelDomain),
                         Translations = c.Translations
                     })
                     .Where(c => c.Name.ToLower().Contains(Search.ToLower()))

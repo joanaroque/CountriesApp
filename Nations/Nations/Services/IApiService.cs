@@ -7,13 +7,20 @@ namespace Nations.Services
 {
     public interface IApiService
     {
-        string CheckString(string property);
+        string CheckStringCountries(string property);
 
         Task<Response> GetCountriesAsync<T>(string urlBase, string servicePrefix, string controller);
 
-        List<string> CheckStringList(List<string> list);
+        List<string> CheckStringCountriesList(List<string> list);
 
         List<RegionalBloc> CheckRegionalBlocsList(List<RegionalBloc> list);
+
+
+        string CheckStringCovid(string property);
+
+
+        Task<Response> GetCovidAsync<T>(string urlBase, string apiPath);
+
 
     }
 }

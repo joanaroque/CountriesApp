@@ -8,6 +8,8 @@ namespace Nations.ViewModels
     {
         Country _country;
 
+        Covid19Data _covid;
+
         public CountryDetailPageViewModel(
             INavigationService navigationService)
             : base(navigationService)
@@ -21,6 +23,12 @@ namespace Nations.ViewModels
             set => SetProperty(ref _country, value);
         }
 
+        public Covid19Data Covid
+        {
+            get => _covid;
+            set => SetProperty(ref _covid, value);
+        }
+
         public override void OnNavigatedTo(INavigationParameters parameters)
         {
             base.OnNavigatedTo(parameters);
@@ -29,6 +37,9 @@ namespace Nations.ViewModels
             {
                 Country = parameters.GetValue<Country>("country");
                 Title = Country.Name;
+
+                Covid = parameters.GetValue<Covid19Data>("country");
+
             }
         }
     }

@@ -24,6 +24,7 @@ namespace Nations
         {
             SyncfusionLicenseProvider.RegisterLicense("MzIyMjYwQDMxMzgyZTMyMmUzMFBYUGxzd0Nqc0lFMFo3MWFBWUpWZkVPT1hOY2JsUFMrRWRjeUhpRmVzanM9");
 
+
             InitializeComponent();
 
             await NavigationService.NavigateAsync($"NavigationPage/{nameof(LoginPage)}");
