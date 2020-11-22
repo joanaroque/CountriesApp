@@ -3,50 +3,54 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
+             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
              x:Class="Nations.Views.LoginPage"
+             BackgroundColor="{StaticResource colorBackgroud}"
              Title="{Binding Title}">
 
-    <AbsoluteLayout>
-        <StackLayout AbsoluteLayout.LayoutBounds="0,0,1,1"
-                     AbsoluteLayout.LayoutFlags="All" 
-                     Padding="5">
-            <ScrollView>
-                <StackLayout>
-                    <Image HeightRequest="150"
-                           Margin="20"
-                           Source="logo"/>
+    <ScrollView>
+        <AbsoluteLayout>
+            <StackLayout
+                AbsoluteLayout.LayoutBounds="0,0,1,1"
+                AbsoluteLayout.LayoutFlags="All"
+                Padding="10">
 
-                    <StackLayout VerticalOptions="CenterAndExpand">
-                        <Entry Placeholder="E-mail"
+
+                <StackLayout VerticalOptions="CenterAndExpand">
+                    <Entry Placeholder="E-mail"
                                    Keyboard="Email"
                                    Text="{Binding Email}" />
 
-                        <Entry Placeholder="Password" 
+                    <Entry Placeholder="Password" 
                                    IsPassword="True"
                                    Text="{Binding Password}" />
-                    </StackLayout>
-
-                    <Label FontAttributes="Bold"
-                           HorizontalOptions="Center" 
-                           Text="Forgot your password?"
-                           VerticalOptions="CenterAndExpand">
-                        <Label.GestureRecognizers>
-                            <TapGestureRecognizer Command="{Binding ForgotPasswordCommand}"/>
-                        </Label.GestureRecognizers>
-                    </Label>
-
                 </StackLayout>
-            </ScrollView>
-            <StackLayout VerticalOptions="EndAndExpand">
-                <Button Command="{Binding LoginCommand}" 
+
+
+                <StackLayout VerticalOptions="EndAndExpand">
+                    <Button Command="{Binding LoginCommand}" 
                         IsEnabled="{Binding IsEnabled}"
                         Text="Login"/>
-                <Button Command="{Binding RegisterCommand}" 
+                    <Button Command="{Binding RegisterCommand}" 
                         IsEnabled="{Binding IsEnabled}"
                         Text="Register"/>
+                </StackLayout>
             </StackLayout>
-        </StackLayout>
-    </AbsoluteLayout>
+
+            <busyindicator:SfBusyIndicator  
+                AnimationType="Battery"
+                AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
+                AbsoluteLayout.LayoutFlags="All"
+                BackgroundColor="{StaticResource colorDanger}"
+                HorizontalOptions="Center"
+                TextColor="{StaticResource colorFontInverse}"
+                IsVisible="{Binding IsRunning}"
+                VerticalOptions="Center"
+                ViewBoxWidth="80"
+                ViewBoxHeight="80" />
+
+        </AbsoluteLayout>
+    </ScrollView>
 </ContentPage>

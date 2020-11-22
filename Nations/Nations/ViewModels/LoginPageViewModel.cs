@@ -64,9 +64,9 @@ namespace Nations.ViewModels
             if (string.IsNullOrEmpty(Password))
             {
                 await App.Current.MainPage.DisplayAlert(
-                      "Error",
-                    "You must enter a valid password.",
-                    "Accept");
+                     Languages.Error,
+                    Languages.PasswordError,
+                    Languages.Accept);
                 return;
             }
 
