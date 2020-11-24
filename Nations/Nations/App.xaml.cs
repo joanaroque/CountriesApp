@@ -15,6 +15,7 @@ namespace Nations
 {
     public partial class App
     {
+
         public App(IPlatformInitializer initializer)
             : base(initializer)
         {

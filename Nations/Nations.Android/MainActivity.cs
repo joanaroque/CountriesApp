@@ -7,6 +7,8 @@ using Prism.Ioc;
 namespace Nations.Droid
 {
     [Activity(Theme = "@style/MainTheme",
+         Icon = "@mipmap/ic_launcher",
+        MainLauncher = false,
               ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation | ConfigChanges.UiMode | ConfigChanges.ScreenLayout | ConfigChanges.SmallestScreenSize)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {

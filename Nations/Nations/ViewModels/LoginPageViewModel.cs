@@ -75,7 +75,7 @@ namespace Nations.ViewModels
 
 
             await _navigationService.NavigateAsync(nameof(CountriesPage));
-
+            Password = string.Empty;
         }
     }
 }

@@ -16,12 +16,12 @@
             <!--  NavigationPage color  -->
             <Style TargetType="NavigationPage">
                 <Setter Property="BarBackgroundColor" Value="Coral"/>
-                <Setter Property="BarTextColor" Value="Beige"/>
+                <Setter Property="BarTextColor" Value="White"/>
             </Style>
 
             <!-- Colors -->
-            <Color x:Key="colorBackgroud">#F2F2F2</Color>
-            <Color x:Key="colorPrimary">#0468BF</Color>
+            <Color x:Key="colorBackground">#08031c</Color>
+            <Color x:Key="colorPrimary">#d745f5</Color>
             <Color x:Key="colorSecondary">#067302</Color>
             <Color x:Key="colorDanger">#F2055C</Color>
             <Color x:Key="colorAccent">#BF4904</Color>

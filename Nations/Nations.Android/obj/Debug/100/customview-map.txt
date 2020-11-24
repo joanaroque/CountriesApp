@@ -1,7 +1,5 @@
 @string/appbar_scrolling_view_behavior;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\flyoutcontent.xml
 @string/appbar_scrolling_view_behavior;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\rootlayout.xml
-adaptive-icon;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
-adaptive-icon;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
 alpha;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\anim\enterfromleft.xml
 alpha;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\anim\exittoleft.xml
 androidx.appcompat.widget.Toolbar;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\fallbacktoolbardonotuse.xml
@@ -16,9 +14,6 @@ androidx.recyclerview.widget.RecyclerView;C:\Users\LENOVO\Documents\Programming\
 attr;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\10\jl\res\values\attrs.xml
 attr;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\values\attrs.xml
 attr;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\8\jl\res\values\attrs.xml
-background;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
-background;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
-bitmap;obj\Debug\100\res\drawable\splash_screen.xml
 cache-path;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 color;obj\Debug\100\res\values\colors.xml
 com.google.android.material.appbar.AppBarLayout;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\flyoutcontent.xml
@@ -37,13 +32,9 @@ enum;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nat
 enum;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\8\jl\res\values\attrs.xml
 external-cache-path;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 external-path;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
-foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon.xml
-foreground;obj\Debug\100\res\mipmap-anydpi-v26\icon_round.xml
 FrameLayout;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\bottomtablayout.xml
 item;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\values\styles.xml
-item;obj\Debug\100\res\drawable\splash_screen.xml
 item;obj\Debug\100\res\values\styles.xml
-layer-list;obj\Debug\100\res\drawable\splash_screen.xml
 LinearLayout;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\53\jl\res\layout\bottomtablayout.xml
 paths;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\52\jl\res\xml\xamarin_essentials_fileprovider_file_paths.xml
 resources;C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\lp\10\jl\res\values\attrs.xml

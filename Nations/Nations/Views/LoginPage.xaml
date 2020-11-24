@@ -7,7 +7,7 @@
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
              x:Class="Nations.Views.LoginPage"
-             BackgroundColor="{StaticResource colorBackgroud}"
+             BackgroundColor="{StaticResource colorBackground}"
              Title="{Binding Title}">
 
     <ScrollView>
@@ -16,20 +16,27 @@
                 AbsoluteLayout.LayoutBounds="0,0,1,1"
                 AbsoluteLayout.LayoutFlags="All"
                 Padding="10">
+                
+                <Image
+                    HeightRequest="300" 
+                    Source="terra"/>
+
+                <Entry Placeholder="E-mail"
+                       PlaceholderColor="Gray"
+                        Keyboard="Email"
+                        TextColor="White"
+                        Text="{Binding Email}" />
+
+                <Entry Placeholder="Password" 
+                        PlaceholderColor="Gray"
+                         IsPassword="True"
+                         TextColor="White"
+                          Text="{Binding Password}" />
 
 
-                <StackLayout VerticalOptions="CenterAndExpand">
-                    <Entry Placeholder="E-mail"
-                                   Keyboard="Email"
-                                   Text="{Binding Email}" />
-
-                    <Entry Placeholder="Password" 
-                                   IsPassword="True"
-                                   Text="{Binding Password}" />
-                </StackLayout>
-
-
-                <StackLayout VerticalOptions="EndAndExpand">
+                <StackLayout
+                   Orientation="Horizontal"
+                    VerticalOptions="EndAndExpand">
                     <Button Command="{Binding LoginCommand}" 
                         IsEnabled="{Binding IsEnabled}"
                         Text="Login"/>
@@ -44,10 +51,10 @@
                 AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
                 AbsoluteLayout.LayoutFlags="All"
                 BackgroundColor="{StaticResource colorDanger}"
-                HorizontalOptions="Center"
+                HorizontalOptions="EndAndExpand"
                 TextColor="{StaticResource colorFontInverse}"
                 IsVisible="{Binding IsRunning}"
-                VerticalOptions="Center"
+                VerticalOptions="EndAndExpand"
                 ViewBoxWidth="80"
                 ViewBoxHeight="80" />
 
