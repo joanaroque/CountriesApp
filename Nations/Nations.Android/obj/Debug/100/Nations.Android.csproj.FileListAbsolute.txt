@@ -1377,3 +1377,4 @@ C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\mipmap-xxhdpi\ic_launcher.png
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\mipmap-xxxhdpi\ic_launcher.png
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\mipmap\icon.png
+C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\drawable\beginning.png
