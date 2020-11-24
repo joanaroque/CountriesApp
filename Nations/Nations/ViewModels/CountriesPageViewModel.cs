@@ -35,7 +35,7 @@ namespace Nations.ViewModels
             INavigationService navigationService,
             IApiService apiService) : base(navigationService)
         {
-            Title = "Countries";
+            Title = "Countries list";
             _navigationService = navigationService;
             _apiService = apiService;
 
@@ -54,10 +54,9 @@ namespace Nations.ViewModels
 
             IsRunning = true;
 
-            string url = App.Current.Resources["UrlAPICovid"].ToString();
+            string url = "https://coronavirus-19-api.herokuapp.com/";
 
-            Response response = await _apiService.GetCovidAsync<Covid19Data>(
-                url, ".herokuapp.com/");
+            Response response = await _apiService.GetCovidAsync<Covid19Data>(url);
 
             IsRunning = false;
 
@@ -157,10 +156,9 @@ namespace Nations.ViewModels
 
             IsRunning = true;
 
-            string url = App.Current.Resources["UrlAPI"].ToString();
+            string url = "https://restcountries.eu/rest/v2/all";
 
-            Response response = await _apiService.GetCountriesAsync<Country>(
-                url, "/rest", "/v2/all");
+            Response response = await _apiService.GetCountriesAsync<Country>(url);
 
             IsRunning = false;
 

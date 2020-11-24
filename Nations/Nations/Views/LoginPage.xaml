@@ -3,7 +3,6 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:prism="http://prismlibrary.com"
              prism:ViewModelLocator.AutowireViewModel="True"
-             xmlns:busyindicator="clr-namespace:Syncfusion.SfBusyIndicator.XForms;assembly=Syncfusion.SfBusyIndicator.XForms"
              xmlns:ios="clr-namespace:Xamarin.Forms.PlatformConfiguration.iOSSpecific;assembly=Xamarin.Forms.Core"
              ios:Page.UseSafeArea="true"
              x:Class="Nations.Views.LoginPage"
@@ -46,17 +45,6 @@
                 </StackLayout>
             </StackLayout>
 
-            <busyindicator:SfBusyIndicator  
-                AnimationType="Battery"
-                AbsoluteLayout.LayoutBounds=".5,.5,.5,.5"
-                AbsoluteLayout.LayoutFlags="All"
-                BackgroundColor="{StaticResource colorDanger}"
-                HorizontalOptions="EndAndExpand"
-                TextColor="{StaticResource colorFontInverse}"
-                IsVisible="{Binding IsRunning}"
-                VerticalOptions="EndAndExpand"
-                ViewBoxWidth="80"
-                ViewBoxHeight="80" />
 
         </AbsoluteLayout>
     </ScrollView>

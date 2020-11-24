@@ -9,9 +9,6 @@
         <ResourceDictionary>
 
             <!-- Parameters -->
-            <x:String x:Key="UrlAPI">https://restcountries.eu</x:String>
-
-            <x:String x:Key="UrlAPICovid">https://coronavirus-19-api</x:String>
             
             <!--  NavigationPage color  -->
             <Style TargetType="NavigationPage">

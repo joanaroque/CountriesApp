@@ -19,7 +19,7 @@ namespace Nations.ViewModels
         {
             _navigationService = navigationService;
 
-            Title = "Login";
+            Title = "Welcome !";
             IsEnabled = true;
            
         }

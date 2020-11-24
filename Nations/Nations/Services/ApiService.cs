@@ -47,10 +47,7 @@ namespace Nations.Services
             return list;
         }
 
-        public async Task<Response> GetCountriesAsync<T>(
-            string urlBase,
-            string servicePrefix,
-            string controller)
+        public async Task<Response> GetCountriesAsync<T>(string urlBase)
         {
             try
             {
@@ -64,8 +61,7 @@ namespace Nations.Services
                     NullValueHandling = NullValueHandling.Ignore
                 };
 
-                string url = $"{servicePrefix}{controller}";
-                HttpResponseMessage response = await client.GetAsync(url);
+                HttpResponseMessage response = await client.GetAsync(urlBase);
                 string result = await response.Content.ReadAsStringAsync();
 
                 if (!response.IsSuccessStatusCode)
@@ -108,7 +104,7 @@ namespace Nations.Services
             return "N/A";
         }
 
-        public async Task<Response> GetCovidAsync<T>(string urlBase, string apiPath)
+        public async Task<Response> GetCovidAsync<T>(string urlBase)
         {
             try
             {
@@ -122,8 +118,8 @@ namespace Nations.Services
                     NullValueHandling = NullValueHandling.Ignore
                 };
 
-                string url = $"{apiPath}";
-                HttpResponseMessage response = await client.GetAsync(url);
+                
+                HttpResponseMessage response = await client.GetAsync(urlBase);
                 string result = await response.Content.ReadAsStringAsync();
 
 

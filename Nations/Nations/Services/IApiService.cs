@@ -9,7 +9,7 @@ namespace Nations.Services
     {
         string CheckStringCountries(string property);
 
-        Task<Response> GetCountriesAsync<T>(string urlBase, string servicePrefix, string controller);
+        Task<Response> GetCountriesAsync<T>(string urlBase);
 
         List<string> CheckStringCountriesList(List<string> list);
 
@@ -19,7 +19,7 @@ namespace Nations.Services
         string CheckStringCovid(string property);
 
 
-        Task<Response> GetCovidAsync<T>(string urlBase, string apiPath);
+        Task<Response> GetCovidAsync<T>(string urlBase);
 
 
     }
