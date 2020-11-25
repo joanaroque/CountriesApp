@@ -2,6 +2,8 @@
 {
     using System.Collections.Generic;
 
+    using Nations.ViewModels;
+
     public class Country
     {
         public string Alpha2Code { get; set; }
@@ -28,5 +30,7 @@
         public List<string> Timezones { get; set; }
         public List<string> TopLevelDomain { get; set; }
         public Translations Translations { get; set; }
+
+        public Covid19Data Covid19Data { get; set; }
     }
 }

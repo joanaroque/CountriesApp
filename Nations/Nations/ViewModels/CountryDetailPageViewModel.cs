@@ -23,7 +23,7 @@ namespace Nations.ViewModels
             set => SetProperty(ref _country, value);
         }
 
-        public Covid19Data Covid
+        public Covid19Data Covid19Data
         {
             get => _covid;
             set => SetProperty(ref _covid, value);
@@ -38,7 +38,7 @@ namespace Nations.ViewModels
                 Country = parameters.GetValue<Country>("country");
                 Title = Country.Name;
 
-                Covid = parameters.GetValue<Covid19Data>("country");
+                Covid19Data = Country.Covid19Data;
 
             }
         }

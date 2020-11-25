@@ -1,4 +1,5 @@
 ﻿
+using Nations.Models;
 using Nations.Views;
 
 using Prism.Commands;

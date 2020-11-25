@@ -1,4 +1,4 @@
-﻿namespace Nations.ViewModels
+﻿namespace Nations.Models
 {
     public class Covid19Data
     {
