@@ -7,7 +7,7 @@
              xmlns:ffSvg="clr-namespace:FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms;assembly=FFImageLoading.Svg.Forms"
              Title="{Binding Title}">
 
-    <StackLayout Padding="5" BackgroundColor="DarkSlateBlue">
+    <StackLayout Padding="5">
         <ScrollView>
             <StackLayout>
                 <ffSvg:SvgCachedImage Aspect="AspectFill" 
@@ -98,7 +98,7 @@
                     </Grid.RowDefinitions>
 
 
-                    <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" >
+                    <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -108,32 +108,32 @@
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Name" TextColor="#7D7D7D" FontSize="12" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Name}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Name}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Capital" TextColor="#7D7D7D" FontSize="12" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Capital}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Capital" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Capital}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Alpha2Code" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Alpha2Code}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Alpha2Code" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Alpha2Code}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="NumericCode" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.NumericCode}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="NumericCode" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.NumericCode}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -143,32 +143,32 @@
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Region" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Region}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Region" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Region}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Subregion" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Subregion}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Subregion" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Subregion}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Population" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Population}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Population" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Population}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Area" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Area}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Area" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Area}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 110, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 110, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -178,32 +178,32 @@
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Cioc" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Cioc}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Cioc" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Cioc}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Native Name" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.NativeName}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Native Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.NativeName}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Alpha3Code" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Alpha3Code}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Alpha3Code" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Alpha3Code}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Domain" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.TopLevelDomain[0]}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Domain" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.TopLevelDomain[0]}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 250, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" WidthRequest="500">
+                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 250, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="*"/>
@@ -213,39 +213,39 @@
                             </Grid.ColumnDefinitions>
                             <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Latitude" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Latlng[0], StringFormat='{0:N2}'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Latitude" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Latlng[0], StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Longitude" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Latlng[1], StringFormat='{0:N2}'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Longitude" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Latlng[1], StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Demonym" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Demonym}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Demonym" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Demonym}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                             <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                                 <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Gini" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Gini, StringFormat='{0:N2}'}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                    <Label Text="Gini" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                    <Label Text="{Binding Country.Gini, StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                                 </StackLayout>
                             </StackLayout>
                         </Grid>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 390, 20, 0" Padding="8" HeightRequest="65" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 390, 20, 0" Padding="8" HeightRequest="170" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Alternative Spellings"
-                                       TextColor="Black"
+                                       TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView 
@@ -256,7 +256,7 @@
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
-                                                <Label Text="{Binding}" />
+                                                <Label Text="{Binding}" TextColor="Beige"/>
                                             </ViewCell>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
@@ -265,14 +265,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 480, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 590, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Timezones"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView 
@@ -283,7 +283,7 @@
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
-                                                <Label Text="{Binding}" />
+                                                <Label Text="{Binding}" TextColor="Beige"/>
                                             </ViewCell>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
@@ -292,14 +292,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 635, 20, 0" Padding="8" HeightRequest="65" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 750, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Top Level Domain"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView 
@@ -310,7 +310,7 @@
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
-                                                <Label Text="{Binding}" />
+                                                <Label Text="{Binding}" TextColor="Beige"/>
                                             </ViewCell>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
@@ -319,14 +319,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 725, 20, 0" Padding="8" HeightRequest="65" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 910, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Calling Codes"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView 
@@ -337,7 +337,7 @@
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
-                                                <Label Text="{Binding}" />
+                                                <Label Text="{Binding}" TextColor="Beige"/>
                                             </ViewCell>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
@@ -346,14 +346,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 815, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1075, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Borders"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView 
@@ -364,7 +364,7 @@
                                     <ListView.ItemTemplate>
                                         <DataTemplate>
                                             <ViewCell>
-                                                <Label Text="{Binding}" />
+                                                <Label Text="{Binding}" TextColor="Beige"/>
                                             </ViewCell>
                                         </DataTemplate>
                                     </ListView.ItemTemplate>
@@ -373,14 +373,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 970, 20, 0" Padding="8" HeightRequest="120" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1230, 20, 0" Padding="8" HeightRequest="120" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Currencies"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView
@@ -401,12 +401,12 @@
                                                         <RowDefinition Height="Auto"/>
                                                         <RowDefinition Height="Auto"/>
                                                     </Grid.RowDefinitions>
-                                                    <Label TextColor="Black" Grid.Row="0" Grid.Column="0">Code:</Label>
-                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Code}" />
-                                                    <Label TextColor="Black" Grid.Row="1" Grid.Column="0">Name:</Label>
-                                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}" />
-                                                    <Label TextColor="Black" Grid.Row="2" Grid.Column="0">Symbol:</Label>
-                                                    <Label Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Symbol}" />
+                                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">Code:</Label>
+                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Code}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Name:</Label>
+                                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}" TextColor="Beige" />
+                                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">Symbol:</Label>
+                                                    <Label Grid.Row="2" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Symbol}" TextColor="Beige"/>
                                                 </Grid>
                                             </ViewCell>
                                         </DataTemplate>
@@ -416,14 +416,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1115, 20, 0" Padding="8" HeightRequest="140" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1380, 20, 0" Padding="8" HeightRequest="140" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Languages"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView
@@ -445,14 +445,14 @@
                                                         <RowDefinition Height="Auto"/>
                                                         <RowDefinition Height="Auto"/>
                                                     </Grid.RowDefinitions>
-                                                    <Label TextColor="Black" Grid.Row="0" Grid.Column="0">Name:</Label>
-                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" />
-                                                    <Label TextColor="Black" Grid.Row="1" Grid.Column="0">Native name:</Label>
-                                                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" Text="{Binding NativeName}" />
-                                                    <Label TextColor="Black" Grid.Row="2" Grid.Column="0">Iso639 1:</Label>
-                                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Iso639_1}" />
-                                                    <Label TextColor="Black" Grid.Row="3" Grid.Column="0">Iso639 2:</Label>
-                                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Iso639_2}" />
+                                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">Name:</Label>
+                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Native name:</Label>
+                                                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" Text="{Binding NativeName}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">Iso639 1:</Label>
+                                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Iso639_1}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="3" Grid.Column="0">Iso639 2:</Label>
+                                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Iso639_2}" TextColor="Beige"/>
                                                 </Grid>
                                             </ViewCell>
                                         </DataTemplate>
@@ -462,14 +462,14 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1280, 20, 0" Padding="8" HeightRequest="180" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1550, 20, 0" Padding="8" HeightRequest="240" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Translations"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <Grid>
@@ -489,39 +489,39 @@
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
                                     </Grid.RowDefinitions>
-                                    <Label TextColor="Black" Grid.Row="0" Grid.Column="0">German:</Label>
-                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Country.Translations.De}" />
-                                    <Label TextColor="Black" Grid.Row="1" Grid.Column="0">Spanish:</Label>
-                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Country.Translations.Es}" />
-                                    <Label TextColor="Black" Grid.Row="2" Grid.Column="0">French:</Label>
-                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Country.Translations.Fr}" />
-                                    <Label TextColor="Black" Grid.Row="3" Grid.Column="0">Japanese:</Label>
-                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Country.Translations.Ja}" />
-                                    <Label TextColor="Black" Grid.Row="4" Grid.Column="0">Italian:</Label>
-                                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding Country.Translations.It}" />
-                                    <Label TextColor="Black" Grid.Row="5" Grid.Column="0">Brazillian-portuguese:</Label>
-                                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding Country.Translations.Br}" />
-                                    <Label TextColor="Black" Grid.Row="6" Grid.Column="0">Portuguese:</Label>
-                                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding Country.Translations.Pt}" />
-                                    <Label TextColor="Black" Grid.Row="7" Grid.Column="0">Dutch:</Label>
-                                    <Label Grid.Row="7" Grid.Column="1" Text="{Binding Country.Translations.Nl}" />
-                                    <Label TextColor="Black" Grid.Row="8" Grid.Column="0">Croatian:</Label>
-                                    <Label Grid.Row="8" Grid.Column="1" Text="{Binding Country.Translations.Hr}" />
-                                    <Label TextColor="Black" Grid.Row="9" Grid.Column="0">Persian:</Label>
-                                    <Label Grid.Row="9" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Country.Translations.Fa}" />
+                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">German:</Label>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Country.Translations.De}" TextColor="Beige" />
+                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Spanish:</Label>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Country.Translations.Es}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">French:</Label>
+                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Country.Translations.Fr}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="3" Grid.Column="0">Japanese:</Label>
+                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Country.Translations.Ja}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="4" Grid.Column="0">Italian:</Label>
+                                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding Country.Translations.It}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="5" Grid.Column="0">Brazillian-portuguese:</Label>
+                                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding Country.Translations.Br}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="6" Grid.Column="0">Portuguese:</Label>
+                                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding Country.Translations.Pt}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="7" Grid.Column="0">Dutch:</Label>
+                                    <Label Grid.Row="7" Grid.Column="1" Text="{Binding Country.Translations.Nl}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="8" Grid.Column="0">Croatian:</Label>
+                                    <Label Grid.Row="8" Grid.Column="1" Text="{Binding Country.Translations.Hr}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="9" Grid.Column="0">Persian:</Label>
+                                    <Label Grid.Row="9" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Country.Translations.Fa}" TextColor="Beige"/>
                                 </Grid>
                             </StackLayout>
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1485, 20, 0" Padding="8" HeightRequest="140" VerticalOptions="StartAndExpand">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1820, 20, 0" Padding="8" HeightRequest="160" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Regional Blocs"
-                                        TextColor="Black"
+                                        TextColor="Beige"
                                    FontSize="Medium"
                                    FontAttributes="Bold" />
-                                <BoxView Color="Gray"
+                                <BoxView Color="Beige"
                                      HeightRequest="2"
                                      HorizontalOptions="Fill" />
                                 <ListView
@@ -543,11 +543,11 @@
                                                         <RowDefinition Height="Auto"/>
                                                         <RowDefinition Height="Auto"/>
                                                     </Grid.RowDefinitions>
-                                                    <Label TextColor="Black" Grid.Row="0" Grid.Column="0">Name:</Label>
-                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" />
-                                                    <Label TextColor="Black" Grid.Row="1" Grid.Column="0">Native name:</Label>
-                                                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Acronym}" />
-                                                    <Label TextColor="Black" Grid.Row="2" Grid.Column="0">Other names:</Label>
+                                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">Name:</Label>
+                                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Native name:</Label>
+                                                    <Label Grid.Row="1" Grid.Column="1" HorizontalOptions="Start" Text="{Binding Acronym}" TextColor="Beige"/>
+                                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">Other names:</Label>
                                                     <ListView   Grid.Row="2"
                                                     Grid.Column="1"
                                                     IsEnabled="False"
@@ -556,12 +556,12 @@
                                                         <ListView.ItemTemplate>
                                                             <DataTemplate>
                                                                 <ViewCell>
-                                                                    <Label Text="{Binding}" />
+                                                                    <Label Text="{Binding}" TextColor="Beige"/>
                                                                 </ViewCell>
                                                             </DataTemplate>
                                                         </ListView.ItemTemplate>
                                                     </ListView>
-                                                    <Label  TextColor="Black" Grid.Row="3" Grid.Column="0">Other acronyms:</Label>
+                                                    <Label  TextColor="Beige" Grid.Row="3" Grid.Column="0">Other acronyms:</Label>
                                                     <ListView   Grid.Row="3"
                                                     Grid.Column="1"
                                                     IsEnabled="False"
@@ -570,7 +570,7 @@
                                                         <ListView.ItemTemplate>
                                                             <DataTemplate>
                                                                 <ViewCell>
-                                                                    <Label Text="{Binding}" />
+                                                                    <Label Text="{Binding}" TextColor="Beige"/>
                                                                 </ViewCell>
                                                             </DataTemplate>
                                                         </ListView.ItemTemplate>
@@ -585,7 +585,7 @@
                     </Frame>
                 </Grid>
 
-                <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" >
+                <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -595,32 +595,32 @@
                         </Grid.ColumnDefinitions>
                         <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Name" TextColor="#7D7D7D" FontSize="12" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Country}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.Country}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Cases" TextColor="#7D7D7D" FontSize="12" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding  Covid19Data.Cases}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Cases" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding  Covid19Data.Cases}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Deaths" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Deaths}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Deaths" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.Deaths}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="TodayCases" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.TodayCases}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="TodayCases" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.TodayCases}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                     </Grid>
                 </Frame>
-                
-                <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand">
+
+                <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                     <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*"/>
@@ -630,26 +630,26 @@
                         </Grid.ColumnDefinitions>
                         <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Recovered" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Recovered}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Recovered" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.Recovered}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Active" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding  Covid19Data.Active}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Active" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding  Covid19Data.Active}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Critical" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Critical}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="Critical" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.Critical}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                         <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
                             <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="CasesPerOneMillion" TextColor="#7D7D7D" FontSize="11" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.CasesPerOneMillion}" TextColor="Black" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
+                                <Label Text="CasesPerOneMillion" TextColor="Beige" FontSize="12"  HorizontalTextAlignment="Center"/>
+                                <Label Text="{Binding Covid19Data.CasesPerOneMillion}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
                             </StackLayout>
                         </StackLayout>
                     </Grid>

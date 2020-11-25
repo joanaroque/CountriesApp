@@ -52,27 +52,17 @@ namespace Nations.ViewModels
 
         private async void LoginAsync()
         {
-            if (string.IsNullOrEmpty(Email) || RegexHelper.IsValidEmail(Email))
+            if (string.IsNullOrEmpty(Email) || !RegexHelper.IsValidEmail(Email))
             {
-                await App.Current.MainPage.DisplayAlert(
-                    Languages.Error,
-                    Languages.EmailError,
-                    Languages.Accept);
+                await App.Current.MainPage.DisplayAlert("Error", "You must insert a valid email.", "Accept");
                 return;
             }
 
             if (string.IsNullOrEmpty(Password))
             {
-                await App.Current.MainPage.DisplayAlert(
-                     Languages.Error,
-                    Languages.PasswordError,
-                    Languages.Accept);
+                await App.Current.MainPage.DisplayAlert("Error", "You must enter a Password.", "Accept");
                 return;
             }
-
-            IsRunning = true;
-            IsEnabled = false;
-
 
             await _navigationService.NavigateAsync(nameof(CountriesPage));
             Password = string.Empty;

@@ -136,12 +136,11 @@ namespace Nations.Services
                 Console.WriteLine($"Fetching covid data from API: {DateTime.Now}");
 
 
-                var covid19 = JsonConvert.DeserializeObject<List<T>>(result, new JsonSerializerSettings { NullValueHandling = NullValueHandling.Ignore });
-
+                List<T> list = JsonConvert.DeserializeObject<List<T>>(result, jsonSettings);
                 return new Response
                 {
                     IsSuccess = true,
-                    Result = covid19
+                    Result = list
                 };
 
             }
