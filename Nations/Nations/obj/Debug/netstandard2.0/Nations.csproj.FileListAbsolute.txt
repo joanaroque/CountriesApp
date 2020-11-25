@@ -26,12 +26,4 @@ C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\XamlC.stamp
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.dll
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.pdb
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\bin\Debug\netstandard2.0\es\Nations.resources.dll
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\bin\Debug\netstandard2.0\fr\Nations.resources.dll
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.Resources.Resource.resources
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.Resources.Resource.es.resources
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.Resources.Resource.fr.resources
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.csproj.GenerateResource.cache
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\es\Nations.resources.dll
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\fr\Nations.resources.dll
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations\obj\Debug\netstandard2.0\Nations.csprojAssemblyReference.cache

@@ -1368,8 +1368,6 @@ C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\android\src\crc64eeb36180fe6023e2\SfEffectsViewRenderer.java
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\android\src\crc64f606ab658bf2774f\SfShimmerRenderer.java
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\android\src\crc64f606ab658bf2774f\ShimmerViewRenderer.java
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\bin\Debug\es\Nations.resources.dll
-C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\bin\Debug\fr\Nations.resources.dll
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\drawable\terra.png
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\mipmap-hdpi\ic_launcher.png
 C:\Users\LENOVO\Documents\Programming\Mobile\CountriesMobileApp\Nations\Nations.Android\obj\Debug\100\res\mipmap-mdpi\ic_launcher.png

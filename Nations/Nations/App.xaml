@@ -8,7 +8,6 @@
     <!-- Application resource dictionary -->
         <ResourceDictionary>
 
-            <!-- Parameters -->
             
             <!--  NavigationPage color  -->
             <Style TargetType="NavigationPage">

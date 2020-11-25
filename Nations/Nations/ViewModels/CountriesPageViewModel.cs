@@ -29,8 +29,6 @@ namespace Nations.ViewModels
 
         ObservableCollection<CountryViewModel> _countries;
 
-        ObservableCollection<CovidViewModel> _corona;
-
         public CountriesPageViewModel(
             INavigationService navigationService,
             IApiService apiService) : base(navigationService)
@@ -70,51 +68,9 @@ namespace Nations.ViewModels
 
             _covid = (List<Covid19Data>)response.Result;
 
-           // ShowCovid();
         }
 
-        //private void ShowCovid()
-        //{
-        //    if (string.IsNullOrEmpty(Search))
-        //    {
-        //        Corona = new ObservableCollection<CovidViewModel>(
-        //            _covid.Select(c =>
-        //            new CovidViewModel(_navigationService)
-        //            {
-        //                Country = _apiService.CheckStringCovid(c.Country),
-        //                Cases = c.Cases,
-        //                TodayCases = c.TodayCases,
-        //                Deaths = c.Deaths,
-        //                TodayDeaths = c.TodayDeaths,
-        //                Recovered = c.Recovered,
-        //                Active = c.Active,
-        //                Critical = c.Critical,
-        //                CasesPerOneMillion = c.CasesPerOneMillion
-        //            })
-        //            .ToList());
-        //    }
-        //    else
-        //    {
-        //        Corona = new ObservableCollection<CovidViewModel>(
-        //            _covid.Select(c =>
-        //            new CovidViewModel(_navigationService)
-        //            {
-        //                Country = _apiService.CheckStringCovid(c.Country),
-        //                Cases = c.Cases,
-        //                TodayCases = c.TodayCases,
-        //                Deaths = c.Deaths,
-        //                TodayDeaths = c.TodayDeaths,
-        //                Recovered = c.Recovered,
-        //                Active = c.Active,
-        //                Critical = c.Critical,
-        //                CasesPerOneMillion = c.CasesPerOneMillion
-        //            })
-        //            .Where(c => c.Country.ToLower().Contains(Search.ToLower()))
-        //            .ToList());
-        //    }
-        //}
-
-
+       
         public DelegateCommand SearchCommand => _searchCommand ?? (_searchCommand =
             new DelegateCommand(ShowCountries));
 
@@ -126,7 +82,6 @@ namespace Nations.ViewModels
             {
                 SetProperty(ref _search, value);
                 ShowCountries();
-              //  ShowCovid();
             }
         }
 
@@ -142,11 +97,6 @@ namespace Nations.ViewModels
             set => SetProperty(ref _countries, value);
         }
 
-        public ObservableCollection<CovidViewModel> Corona
-        {
-            get => _corona;
-            set => SetProperty(ref _corona, value);
-        }
 
         async void LoadCountriesAsync()
         {
@@ -183,8 +133,13 @@ namespace Nations.ViewModels
                 Countries = new ObservableCollection<CountryViewModel>(
                     _myCountries.Select(c =>
                     {
-                        Covid19Data covidInfo = _covid.Where(covid => covid.Country.Equals(c.Alpha3Code)).FirstOrDefault();
+                        Covid19Data covidInfo = _covid.Where(covid => covid.Country.Equals(c.Name)).FirstOrDefault();
 
+                        if (covidInfo == null)
+                        {
+                            covidInfo = _covid.Where(covid => covid.Country.Equals(c.Alpha3Code)).FirstOrDefault();
+                        }
+                       
                         return new CountryViewModel(_navigationService)
                         {
                             Alpha2Code = _apiService.CheckStringCountries(c.Alpha2Code),
@@ -225,7 +180,12 @@ namespace Nations.ViewModels
                 Countries = new ObservableCollection<CountryViewModel>(
             _myCountries.Select(c =>
             {
-                Covid19Data covidInfo = _covid.Where(covid => covid.Country.Equals(c.Alpha3Code)).FirstOrDefault();
+                Covid19Data covidInfo = _covid.Where(covid => covid.Country.Equals(c.Name)).FirstOrDefault();
+
+                if (covidInfo == null)
+                {
+                    covidInfo = _covid.Where(covid => covid.Country.Equals(c.Alpha3Code)).FirstOrDefault();
+                }
 
                 return new CountryViewModel(_navigationService)
                 {
