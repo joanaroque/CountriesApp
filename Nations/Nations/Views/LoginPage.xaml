@@ -39,9 +39,7 @@
                     <Button Command="{Binding LoginCommand}" 
                         IsEnabled="{Binding IsEnabled}"
                         Text="Login"/>
-                    <Button Command="{Binding RegisterCommand}" 
-                        IsEnabled="{Binding IsEnabled}"
-                        Text="Register"/>
+                   
                 </StackLayout>
             </StackLayout>
 
