@@ -22,75 +22,8 @@
                     </Grid.ColumnDefinitions>
                     <Grid.RowDefinitions>
 
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
+
+               
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
                         <RowDefinition Height="Auto"/>
@@ -98,147 +31,77 @@
                     </Grid.RowDefinitions>
 
 
-                    <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Name}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
+                    <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="8" HeightRequest="400" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                        <ScrollView>
+                            <StackLayout>
+                                <Label Text="Country details"
+                                        TextColor="Beige"
+                                   FontSize="Medium"
+                                   FontAttributes="Bold" />
+                                <BoxView Color="Beige"
+                                     HeightRequest="2"
+                                     HorizontalOptions="Fill" />
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">Name:</Label>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Country.Name}" TextColor="Beige" />
+                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Capital:</Label>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Country.Capital}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">Alpha 2 Code:</Label>
+                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Country.Alpha2Code}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="3" Grid.Column="0">Numeric Code:</Label>
+                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Country.NumericCode}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="4" Grid.Column="0">Region:</Label>
+                                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding Country.Region}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="5" Grid.Column="0">Subregion:</Label>
+                                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding Country.Subregion}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="6" Grid.Column="0">Population:</Label>
+                                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding Country.Population}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="7" Grid.Column="0">Cioc:</Label>
+                                    <Label Grid.Row="7" Grid.Column="1" Text="{Binding Country.Cioc}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="8" Grid.Column="0">Native Name:</Label>
+                                    <Label Grid.Row="8" Grid.Column="1" Text="{Binding Country.NativeName}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="9" Grid.Column="0">Alpha 3 Code:</Label>
+                                    <Label Grid.Row="9" Grid.Column="1" Text="{Binding Country.Alpha3Code}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="10" Grid.Column="0">Domain:</Label>
+                                    <Label Grid.Row="10" Grid.Column="1" Text="{Binding Country.TopLevelDomain[0]}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="11" Grid.Column="0">Latitude:</Label>
+                                    <Label Grid.Row="11" Grid.Column="1" Text="{Binding Country.Latlng[0], StringFormat='{0:N2}'}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="12" Grid.Column="0">Longitude:</Label>
+                                    <Label Grid.Row="12" Grid.Column="1" Text="{Binding Country.Latlng[1], StringFormat='{0:N2}'}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="13" Grid.Column="0">Demonym:</Label>
+                                    <Label Grid.Row="13" Grid.Column="1" Text="{Binding Country.Demonym}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="14" Grid.Column="0">Gini:</Label>
+                                    <Label Grid.Row="14" Grid.Column="1" Text="{Binding Country.Gini, StringFormat='{0:N2}'}" TextColor="Beige"/>
+                                </Grid>
                             </StackLayout>
-                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Capital" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Capital}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Alpha2Code" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Alpha2Code}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="NumericCode" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.NumericCode}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Grid>
+                        </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Region" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Region}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Subregion" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Subregion}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Population" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Population}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Area" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Area}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Grid>
-                    </Frame>
+                 
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 110, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Cioc" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Cioc}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Native Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.NativeName}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Alpha3Code" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Alpha3Code}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Domain" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.TopLevelDomain[0]}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Grid>
-                    </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 250, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                        <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                            <Grid.ColumnDefinitions>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                                <ColumnDefinition Width="*"/>
-                            </Grid.ColumnDefinitions>
-                            <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Latitude" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Latlng[0], StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Longitude" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Latlng[1], StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Demonym" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Demonym}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                            <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                                <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                    <Label Text="Gini" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                    <Label Text="{Binding Country.Gini, StringFormat='{0:N2}'}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                                </StackLayout>
-                            </StackLayout>
-                        </Grid>
-                    </Frame>
-
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 390, 20, 0" Padding="8" HeightRequest="170" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 10, 20, 0" Padding="8" HeightRequest="150" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Alternative Spellings"
@@ -265,7 +128,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 590, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True"  Margin="20, 190, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Timezones"
@@ -292,7 +155,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 750, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 350, 20, 0" Padding="8" HeightRequest="90" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Top Level Domain"
@@ -319,7 +182,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 910, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 470, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Calling Codes"
@@ -346,7 +209,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1075, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 630, 20, 0" Padding="8" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Borders"
@@ -373,7 +236,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1230, 20, 0" Padding="8" HeightRequest="120" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 790, 20, 0" Padding="8" HeightRequest="120" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Currencies"
@@ -416,7 +279,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1380, 20, 0" Padding="8" HeightRequest="140" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 940, 20, 0" Padding="8" HeightRequest="140" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Languages"
@@ -462,7 +325,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1550, 20, 0" Padding="8" HeightRequest="240" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1110, 20, 0" Padding="8" HeightRequest="240" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Translations"
@@ -514,7 +377,7 @@
                         </ScrollView>
                     </Frame>
 
-                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1820, 20, 0" Padding="8" HeightRequest="160" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1380, 20, 0" Padding="8" HeightRequest="160" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
                         <ScrollView>
                             <StackLayout>
                                 <Label Text="Regional Blocs"
@@ -583,79 +446,50 @@
                             </StackLayout>
                         </ScrollView>
                     </Frame>
+
+                    <Frame Grid.Row="1" HasShadow="True" Margin="20, 1570, 20, 0" Padding="8" HeightRequest="220" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
+                        <ScrollView>
+                            <StackLayout>
+                                <Label Text="Covid19 Data"
+                                        TextColor="Beige"
+                                   FontSize="Medium"
+                                   FontAttributes="Bold" />
+                                <BoxView Color="Beige"
+                                     HeightRequest="2"
+                                     HorizontalOptions="Fill" />
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Label TextColor="Beige" Grid.Row="0" Grid.Column="0">Cases:</Label>
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Covid19Data.Cases}" TextColor="Beige" />
+                                    <Label TextColor="Beige" Grid.Row="1" Grid.Column="0">Deaths:</Label>
+                                    <Label Grid.Row="1" Grid.Column="1" Text="{Binding Covid19Data.Deaths}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="2" Grid.Column="0">Today Cases:</Label>
+                                    <Label Grid.Row="2" Grid.Column="1" Text="{Binding Covid19Data.TodayCases}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="3" Grid.Column="0">Recovered:</Label>
+                                    <Label Grid.Row="3" Grid.Column="1" Text="{Binding Covid19Data.Recovered}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="4" Grid.Column="0">Active:</Label>
+                                    <Label Grid.Row="4" Grid.Column="1" Text="{Binding Covid19Data.Active}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="5" Grid.Column="0">Critical:</Label>
+                                    <Label Grid.Row="5" Grid.Column="1" Text="{Binding Covid19Data.Critical}" TextColor="Beige"/>
+                                    <Label TextColor="Beige" Grid.Row="6" Grid.Column="0">Cases Per One Million:</Label>
+                                    <Label Grid.Row="6" Grid.Column="1" Text="{Binding Covid19Data.CasesPerOneMillion}" TextColor="Beige"/>
+                                </Grid>
+                            </StackLayout>
+                        </ScrollView>
+                    </Frame>
                 </Grid>
-
-                <Frame Grid.Row="0" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Name" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Country}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Cases" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding  Covid19Data.Cases}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Deaths" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Deaths}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Today Cases" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.TodayCases}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </Grid>
-                </Frame>
-
-                <Frame Grid.Row="1" HasShadow="True" Margin="20, 0, 20, 0" Padding="0" HeightRequest="130" VerticalOptions="StartAndExpand" BackgroundColor="DarkSlateBlue">
-                    <Grid HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand">
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-                        <StackLayout Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Recovered" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Recovered}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="1" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Active" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding  Covid19Data.Active}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="2" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="Critical" TextColor="Beige" FontSize="12" HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.Critical}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                        <StackLayout Grid.Column="3" Orientation="Vertical" Spacing="10" HorizontalOptions="CenterAndExpand">
-                            <StackLayout Spacing="7" HorizontalOptions="CenterAndExpand">
-                                <Label Text="CasesPerOneMillion" TextColor="Beige" FontSize="12"  HorizontalTextAlignment="Center"/>
-                                <Label Text="{Binding Covid19Data.CasesPerOneMillion}" TextColor="Beige" FontSize="14" FontAttributes="Bold" HorizontalTextAlignment="Center"/>
-                            </StackLayout>
-                        </StackLayout>
-                    </Grid>
-                </Frame>
-                
-             
             </StackLayout>
         </ScrollView>
     </StackLayout>
